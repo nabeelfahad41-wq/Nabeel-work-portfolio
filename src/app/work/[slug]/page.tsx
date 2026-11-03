@@ -40,9 +40,9 @@ export default async function CampaignPage({ params }: { params: Promise<{ slug:
 
         <dl className="page-meta">
           <div><dt className="meta dim">Headline</dt><dd>{c.headline.value} {c.headline.label.toLowerCase()}</dd></div>
-          <div><dt className="meta dim">Platform</dt><dd>{c.platform}</dd></div>
-          <div><dt className="meta dim">Sector</dt><dd>{c.category}</dd></div>
-          <div><dt className="meta dim">Managed by</dt><dd>Nabeel</dd></div>
+          {c.meta.slice(0, 3).map((m) => (
+            <div key={m.label}><dt className="meta dim">{m.label}</dt><dd>{m.value}</dd></div>
+          ))}
         </dl>
 
         <div className="page-media">
@@ -77,15 +77,17 @@ export default async function CampaignPage({ params }: { params: Promise<{ slug:
             <p>{c.summary}</p>
           </section>
           <section className="page-row">
-            <h2 className="meta acc-text">Strategy</h2>
-            <p>{c.strategy}</p>
-          </section>
-          <section className="page-row">
-            <h2 className="meta acc-text">Result</h2>
+            <h2 className="meta acc-text">What I did</h2>
             <ul className="tl-impact">
-              {c.result.map((r) => <li key={r}>{r}</li>)}
+              {c.did.map((d) => <li key={d}>{d}</li>)}
             </ul>
           </section>
+          {c.recognition && (
+            <section className="page-row">
+              <h2 className="meta acc-text">Recognition</h2>
+              <p>{c.recognition}</p>
+            </section>
+          )}
         </div>
 
         <Link href={`/work/${next.slug}`} className="page-next" data-cursor="Next">
