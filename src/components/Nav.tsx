@@ -9,7 +9,9 @@ export default function Nav() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
   const [active, setActive] = useState("");
-  const isHome = usePathname() === "/";
+  const pathname = usePathname();
+  const isHome = pathname === "/";
+  const onPortfolio = pathname.startsWith("/work");
   const href = (id: string) => (isHome ? `#${id}` : `/#${id}`);
 
   useEffect(() => {
@@ -56,6 +58,17 @@ export default function Nav() {
           ))}
         </nav>
 
+        <Link
+          href="/work"
+          className={`nav-portfolio${onPortfolio ? " is-current" : ""}`}
+          aria-current={pathname === "/work" ? "page" : undefined}
+          data-cursor=""
+        >
+          <span className="nav-portfolio-spark" aria-hidden="true">✦</span>
+          Portfolio
+          <span className="nav-portfolio-arw" aria-hidden="true">↗</span>
+        </Link>
+
         <a href={href("contact")} className="nav-status">
           <span className="dot" aria-hidden="true" />
           Open to roles
@@ -73,6 +86,11 @@ export default function Nav() {
       </header>
 
       <div className={`nav-sheet${open ? " is-open" : ""}`} aria-hidden={!open}>
+        <Link href="/work" className="nav-sheet-portfolio" onClick={() => setOpen(false)} tabIndex={open ? 0 : -1}>
+          <span className="nav-num">IDX</span>
+          Portfolio
+          <i aria-hidden="true">↗</i>
+        </Link>
         {NAV.map((n) => (
           <a key={n.id} href={href(n.id)} onClick={() => setOpen(false)} tabIndex={open ? 0 : -1}>
             <span className="nav-num">{n.num}</span>
@@ -83,10 +101,16 @@ export default function Nav() {
           <a href={SITE.whatsapp} target="_blank" rel="noopener noreferrer" tabIndex={open ? 0 : -1}>WhatsApp {SITE.whatsappLabel}</a>
           <div className="nav-sheet-links">
             <a href={SITE.linkedin} target="_blank" rel="noopener noreferrer" tabIndex={open ? 0 : -1}>LinkedIn ↗</a>
-            <Link href="/work" onClick={() => setOpen(false)} tabIndex={open ? 0 : -1}>Portfolio →</Link>
           </div>
         </div>
       </div>
+
+      {!onPortfolio && (
+        <Link href="/work" className="fab-portfolio" aria-label="View detailed portfolio">
+          <span className="fab-portfolio-spark" aria-hidden="true">✦</span>
+          <span className="fab-portfolio-text">Portfolio</span>
+        </Link>
+      )}
     </>
   );
 }
