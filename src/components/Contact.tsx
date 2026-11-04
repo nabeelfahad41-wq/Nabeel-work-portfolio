@@ -8,7 +8,7 @@ export default function Contact() {
     <section id="contact" className="section contact" data-accent="green">
       <div className="wrap">
         <Reveal className="sec-label">
-          <span className="sec-num">09</span>
+          <span className="sec-num">08</span>
           <span className="sec-rule" />
           <span>Contact</span>
         </Reveal>

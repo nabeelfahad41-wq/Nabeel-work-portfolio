@@ -1189,16 +1189,6 @@ html.menu-open .fab-portfolio { display: none !important; }
 
 .ab-body { margin-top: 20px; font-size: 16px; line-height: 1.7; color: var(--dim); max-width: 52ch; }
 
-/* ---------- Testimonials ---------- */
-
-.quotes { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--gap); }
-.quote { position: relative; display: flex; flex-direction: column; gap: 28px; padding: clamp(24px, 3vw, 44px); border: 1px solid var(--line); background: var(--bg-3); }
-.quote::before { content: ""; position: absolute; left: -1px; top: -1px; width: 64px; height: 2px; background: var(--green); }
-.quote-mark { font-family: var(--font-d); font-size: 5rem; line-height: 0.6; color: var(--kraft); height: 0.45em; }
-.quote blockquote { font-size: clamp(1.05rem, 1.4vw, 1.3rem); line-height: 1.55; color: var(--ink); font-weight: 300; }
-.quote-from { margin-top: auto; display: inline-flex; align-items: center; gap: 10px; color: var(--dim); }
-.quote-from i { width: 6px; height: 6px; border-radius: 50%; background: var(--green); }
-
 /* ---------- Campaign pages ---------- */
 
 .page-shots { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--gap); margin-bottom: clamp(40px, 5vw, 72px); }
@@ -1402,7 +1392,6 @@ html.menu-open .fab-portfolio { display: none !important; }
   .rs-num { grid-column: 1 / -1; margin-bottom: 8px; }
   .rs-row p { grid-column: 1 / -1; }
   .rs-dash { grid-template-columns: 1fr 1fr; }
-  .quotes { grid-template-columns: 1fr; }
 
   .cs-problem { grid-column: 1 / -1; }
   .cs-impl-grid { grid-template-columns: 1fr; gap: 36px; }

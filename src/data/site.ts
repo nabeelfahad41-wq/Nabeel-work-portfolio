@@ -15,7 +15,7 @@ export const NAV = [
   { id: "skills", num: "04", label: "Skills" },
   { id: "experience", num: "05", label: "Experience" },
   { id: "about", num: "06", label: "About" },
-  { id: "contact", num: "09", label: "Contact" },
+  { id: "contact", num: "08", label: "Contact" },
 ];
 
 export const SKILLS = [
@@ -55,15 +55,3 @@ export const STACK_MARQUEE = [
   "CRO", "Click-to-WhatsApp", "Google Analytics", "Search Console", "SEMrush", "Ahrefs",
 ];
 
-export const TESTIMONIALS = [
-  {
-    quote:
-      "Within just 7 months, we saw over 35 high-value keywords ranking on Google's first page and generated more than 7,000 new visitors organically. His ability to take full ownership and deliver measurable growth is what truly sets him apart.",
-    from: "Trasccon Interconnection Solutions",
-  },
-  {
-    quote:
-      "We wanted a website that reflects the experience of our resort, and Nabeel delivered exactly that. The design, structure, and user experience were thoughtfully executed.",
-    from: "Rain Country Resort",
-  },
-];

@@ -6,7 +6,6 @@ import Capabilities from "@/components/Capabilities";
 import Experience from "@/components/Experience";
 import About from "@/components/About";
 import Process from "@/components/Process";
-import CaseStudy from "@/components/CaseStudy";
 import Contact from "@/components/Contact";
 
 export default function Home() {
@@ -20,7 +19,6 @@ export default function Home() {
       <Experience />
       <About />
       <Process />
-      <CaseStudy />
       <Contact />
     </main>
   );
