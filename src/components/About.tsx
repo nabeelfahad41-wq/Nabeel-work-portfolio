@@ -33,7 +33,7 @@ const STATS = [
 
 export default function About() {
   return (
-    <section id="about" className="section ab" data-accent="crimson">
+    <section id="about" className="section ab" data-accent="green">
       <div className="wrap">
         <Reveal className="work-meta">
           <span><b>06</b> About</span>

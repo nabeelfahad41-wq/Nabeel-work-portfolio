@@ -12,7 +12,7 @@ const STRIP = [
 
 export default function Results() {
   return (
-    <section id="results" className="section section-alt" data-accent="crimson">
+    <section id="results" className="section section-alt" data-accent="green">
       <div className="bg-word" aria-hidden="true">ROAS</div>
       <div className="wrap">
         <SectionHead

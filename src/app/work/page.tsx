@@ -30,7 +30,7 @@ function Label({ num, text }: { num: string; text: string }) {
 export default function WorkPage() {
   return (
     <>
-      <main className="page work-index" data-accent="crimson">
+      <main className="page work-index" data-accent="green">
         <div className="wrap">
           <div className="work-meta">
             <span><b>IDX</b> Portfolio · Case studies</span>

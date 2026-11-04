@@ -5,7 +5,7 @@ import { TECH_ICONS } from "./techIcons";
 
 export default function Capabilities() {
   return (
-    <section id="skills" className="section" data-accent="crimson">
+    <section id="skills" className="section" data-accent="green">
       <div className="bg-word" aria-hidden="true">GROWTH</div>
       <div className="wrap">
         <SectionHead

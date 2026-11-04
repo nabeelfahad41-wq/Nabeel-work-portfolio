@@ -8,7 +8,7 @@ import { PROCESS } from "@/data/site";
 export default function Process() {
   const reduced = useReducedMotion();
   return (
-    <section id="process" className="section" data-accent="crimson">
+    <section id="process" className="section section-green" data-accent="green">
       <div className="wrap">
         <SectionHead
           num="07"

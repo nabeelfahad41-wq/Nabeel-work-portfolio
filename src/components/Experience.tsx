@@ -12,7 +12,7 @@ export default function Experience() {
   const scaleY = useSpring(scrollYProgress, { stiffness: 120, damping: 30 });
 
   return (
-    <section id="experience" className="section" data-accent="crimson">
+    <section id="experience" className="section" data-accent="green">
       <div className="wrap">
         <SectionHead
           num="05"

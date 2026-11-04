@@ -5,7 +5,7 @@ import { CAMPAIGNS, FEATURED_CAMPAIGNS } from "@/data/projects";
 
 export default function Projects() {
   return (
-    <section id="work" className="section work" data-accent="crimson">
+    <section id="work" className="section work" data-accent="green">
       <div className="wrap">
         <Reveal className="work-meta">
           <span><b>03</b> Selected campaigns</span>

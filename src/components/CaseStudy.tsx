@@ -5,7 +5,7 @@ import { TESTIMONIALS } from "@/data/site";
 /** Client testimonials. */
 export default function CaseStudy() {
   return (
-    <section id="clients" className="section section-alt" data-accent="crimson">
+    <section id="clients" className="section section-alt" data-accent="green">
       <div className="wrap">
         <SectionHead
           compact

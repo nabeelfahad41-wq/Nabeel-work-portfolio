@@ -5,7 +5,7 @@ import { SITE } from "@/data/site";
 
 export default function Contact() {
   return (
-    <section id="contact" className="section contact" data-accent="crimson">
+    <section id="contact" className="section contact" data-accent="green">
       <div className="wrap">
         <Reveal className="sec-label">
           <span className="sec-num">09</span>

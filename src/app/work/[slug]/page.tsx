@@ -25,7 +25,7 @@ export default async function CampaignPage({ params }: { params: Promise<{ slug:
   const [hero, ...gallery] = c.shots;
 
   return (
-    <main className="page" data-accent="crimson">
+    <main className="page" data-accent="green">
       <div className="wrap">
         <Link href="/work" className="link-arrow page-back">
           <span>←</span> Full portfolio
