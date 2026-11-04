@@ -1147,6 +1147,10 @@ html.menu-open .fab-portfolio { display: none !important; }
 }
 .shot-cap { font-size: clamp(14px, 1.1vw, 16px); color: var(--white); max-width: 30ch; }
 
+/* Real screenshots keep their own shape, so dashboards are never cropped */
+.media .browser-view.has-shot { aspect-ratio: 2.08 / 1; background: #fff; }
+.media .browser-view.has-shot img { object-fit: contain; object-position: center; }
+
 /* ---------- Results ---------- */
 
 .rs-strip { position: relative; display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
@@ -1264,7 +1268,11 @@ html.menu-open .fab-portfolio { display: none !important; }
 .pf-result div:first-child dt { color: var(--crimson); }
 .pf-recog { display: grid; gap: 6px; font-size: 15px; color: var(--text); }
 
-.pf-shots { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 10px; }
+.pf-shots { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px 14px; margin-top: 10px; }
+.pf-shots.is-odd figure:first-child { grid-column: 1 / -1; }
+.pf-shots a { display: block; }
+.pf-shots a .media { transition: border-color 0.3s; }
+.pf-shots a:hover .media { border-color: color-mix(in srgb, var(--crimson) 60%, transparent); }
 .pf-shots .browser-view { aspect-ratio: 16 / 11; }
 .pf-shots .browser-url { display: none; }
 .pf-shots .shot-slot { inset: 8px; gap: 6px; }
@@ -1491,12 +1499,46 @@ html.menu-open .fab-portfolio { display: none !important; }
   .page-meta div:nth-child(n + 3) { border-top: 1px solid var(--line); }
   .page-gallery { grid-template-columns: repeat(2, 1fr); }
 
-  .rs-strip { grid-template-columns: 1fr; }
-  .rs-strip > div + div { padding-left: 0; border-left: 0; border-top: 1px solid var(--line); }
+  /* Results numbers become a bento tile grid on phones: wide, two halves, wide */
+  .rs-strip { grid-template-columns: 1fr 1fr; gap: 10px; border: 0; counter-reset: rs; }
+  .rs-strip > div:nth-child(n) {
+    position: relative;
+    gap: 8px;
+    padding: 18px 16px 20px;
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    background: var(--bg-3);
+    counter-increment: rs;
+  }
+  .rs-strip > div:nth-child(n)::before {
+    content: "0" counter(rs);
+    position: absolute;
+    top: 14px;
+    right: 16px;
+    font-family: var(--font-m);
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    color: var(--dim);
+  }
+  .rs-strip > div:first-child,
+  .rs-strip > div:last-child { grid-column: 1 / -1; }
+  .rs-strip > div:first-child {
+    padding: 22px 18px 24px;
+    border-color: color-mix(in srgb, var(--crimson) 55%, transparent);
+    background:
+      radial-gradient(120% 140% at 100% 0%, color-mix(in srgb, var(--crimson) 45%, transparent), transparent 60%),
+      linear-gradient(160deg, var(--crimson-deep), #3a060c);
+  }
+  .rs-strip > div:first-child b { color: var(--white); font-size: 4.2rem; }
+  .rs-strip > div:first-child span { color: color-mix(in srgb, var(--white) 78%, transparent); }
+  .rs-strip > div:first-child::before { color: color-mix(in srgb, var(--white) 65%, transparent); }
+  .rs-strip b { font-size: 2.5rem; }
+  .rs-strip > div:last-child b { color: var(--crimson); }
+  .rs-strip span { font-size: 13px; line-height: 1.45; }
   .rs-dash, .page-shots { grid-template-columns: 1fr; }
   .pf-meta { grid-template-columns: 1fr 1fr; }
   .pf-case-num { justify-items: start; text-align: left; }
-  .pf-shots { grid-template-columns: 1fr 1fr; }
+  .pf-shots { grid-template-columns: 1fr; }
   .pf-steps, .pf-sites { grid-template-columns: 1fr; }
   .pf-result div { flex: 1 1 45%; border-bottom: 1px solid var(--line); }
   .pf-filters button { height: 34px; padding: 0 12px; }

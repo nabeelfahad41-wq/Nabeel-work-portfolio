@@ -74,10 +74,16 @@ export default function CaseList({ campaigns }: { campaigns: Campaign[] }) {
                   <p className="pf-recog"><span className="meta acc-text">Recognition</span>{c.recognition}</p>
                 )}
 
-                <div className="pf-shots">
+                <div className={`pf-shots${c.shots.length % 2 ? " is-odd" : ""}`}>
                   {c.shots.map((s) => (
                     <figure key={s.caption}>
-                      <ShotFrame shot={s} bar={s.caption.split(" · ")[0]} sizes="(max-width: 767px) 100vw, 30vw" />
+                      {s.src ? (
+                        <a href={s.src} target="_blank" rel="noopener noreferrer" data-cursor="Open">
+                          <ShotFrame shot={s} bar={s.caption.split(" · ")[0]} sizes="(max-width: 1023px) 100vw, 60vw" />
+                        </a>
+                      ) : (
+                        <ShotFrame shot={s} bar={s.caption.split(" · ")[0]} sizes="(max-width: 767px) 100vw, 30vw" />
+                      )}
                       <figcaption className="meta dim">{s.caption}</figcaption>
                     </figure>
                   ))}

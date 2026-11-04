@@ -38,7 +38,7 @@ export const SKILLS = [
     title: "Tools & Build",
     note: "Measurement, research and the sites the traffic lands on.",
     items: ["Google Analytics", "Search Console", "SEMrush", "Ahrefs", "WordPress", "Shopify", "Figma", "Next.js"],
-    shipped: "Trasccon · Rain Country Resort",
+    shipped: "Trasccon · SDS · Navodaya Power",
   },
 ];
 

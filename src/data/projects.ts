@@ -60,9 +60,9 @@ export const CAMPAIGNS: Campaign[] = [
       { value: "2", label: "Platforms" },
     ],
     shots: [
-      { caption: "Google Ads · ROAS overview" },
-      { caption: "Meta Ads Manager · lead campaigns" },
-      { caption: "Top performing creatives" },
+      { src: "/work/design1studio-google-ads.png", caption: "Google Ads · campaign overview" },
+      { src: "/work/design1studio-meta-campaigns.png", caption: "Meta Ads Manager · lead campaigns" },
+      { src: "/work/design1studio-meta-leads.png", caption: "Meta Ads Manager · leads performance" },
     ],
     featured: true,
   },
@@ -93,9 +93,8 @@ export const CAMPAIGNS: Campaign[] = [
       { value: "₹13.56", label: "Per conversation" },
     ],
     shots: [
-      { caption: "Meta Ads Manager · messaging results" },
-      { caption: "Audience breakdown" },
-      { caption: "Ad creatives" },
+      { src: "/work/aaramgram-messaging.png", caption: "Meta Ads Manager · messaging results" },
+      { src: "/work/aaramgram-video.png", caption: "Meta Ads Manager · video engagement" },
     ],
     featured: true,
   },
@@ -126,9 +125,8 @@ export const CAMPAIGNS: Campaign[] = [
       { value: "₹6.63", label: "Per conversation" },
     ],
     shots: [
-      { caption: "Meta Ads Manager · conversations" },
-      { caption: "Cost per result trend" },
-      { caption: "Ad creatives" },
+      { src: "/work/go2wayanad-messaging.png", caption: "Meta Ads Manager · messaging results" },
+      { src: "/work/go2wayanad-campaigns.png", caption: "Meta Ads Manager · campaigns" },
     ],
     featured: true,
   },
@@ -159,41 +157,41 @@ export const CAMPAIGNS: Campaign[] = [
       { value: "₹15.99", label: "Per conversation" },
     ],
     shots: [
-      { caption: "Meta Ads Manager · campaign results" },
-      { caption: "Product promotion creatives" },
-      { caption: "Brand awareness reach" },
+      { src: "/work/aesthetic-design-messaging.png", caption: "Meta Ads Manager · messaging results" },
+      { src: "/work/aesthetic-design-campaigns.png", caption: "Meta Ads Manager · campaigns" },
     ],
     featured: false,
   },
   {
-    slug: "kuruva-island-resort",
+    slug: "koza-aesthetic-clinic",
     num: "05",
     kind: "paid",
-    client: "Kuruva Island Resort",
-    category: "Resort · Kerala",
-    tag: "Paid media · Resort",
-    sub: "Resort in Kerala",
+    client: "Koza – Aesthetic Clinic",
+    category: "Aesthetic & skincare clinic",
+    tag: "Paid media · Aesthetic clinic",
+    sub: "Aesthetic and skincare clinic",
     platform: "Meta",
-    headline: { value: "352", label: "Leads in 20 days" },
-    summary: "A short, focused lead generation sprint for a resort, using local targeting and lead-form optimisation.",
+    headline: { value: "1,104", label: "Conversations" },
+    summary:
+      "Managed Meta advertising campaigns for an aesthetic clinic, promoting skincare and facial treatment services to generate customer enquiries.",
     meta: [
       { label: "Platform", value: "Meta Ads" },
-      { label: "Objective", value: "Lead generation" },
-      { label: "Window", value: "20 days" },
+      { label: "Objective", value: "Messaging conversations" },
+      { label: "Services", value: "Carbon Facial, Hydra Facial and other aesthetic treatments" },
     ],
     did: [
-      "Targeted local audiences around the resort.",
-      "Optimised the lead form to raise completion and lead quality.",
+      "Executed service-specific campaigns for Carbon Facial, Hydra Facial and other aesthetic treatments.",
+      "Developed promotional creatives and targeted campaigns to attract potential customers.",
+      "Managed campaign optimisation to improve enquiry generation and cost efficiency.",
     ],
     metrics: [
-      { value: "352", label: "Leads" },
-      { value: "₹22", label: "Per result" },
-      { value: "20", label: "Days" },
+      { value: "1,104", label: "Messaging conversations" },
+      { value: "₹50.54", label: "Per conversation" },
+      { value: "1.3M+", label: "Impressions" },
     ],
     shots: [
-      { caption: "Meta Ads Manager · lead results" },
-      { caption: "Lead form" },
-      { caption: "Ad creatives" },
+      { src: "/work/koza-messaging.png", caption: "Meta Ads Manager · messaging results" },
+      { src: "/work/koza-campaigns.png", caption: "Meta Ads Manager · campaigns" },
     ],
     featured: false,
   },
@@ -224,8 +222,9 @@ export const CAMPAIGNS: Campaign[] = [
       { value: "₹82.18", label: "Per lead" },
     ],
     shots: [
-      { caption: "Meta Ads Manager · lead results" },
-      { caption: "Ad creatives" },
+      { src: "/work/lead-workz-leads.png", caption: "Meta Ads Manager · lead results" },
+      { src: "/work/lead-workz-campaigns.png", caption: "Meta Ads Manager · campaigns" },
+      { src: "/work/lead-workz-google-ads.png", caption: "Google Ads · overview" },
     ],
     featured: false,
   },
@@ -251,8 +250,9 @@ export const CAMPAIGNS: Campaign[] = [
     ],
     metrics: [{ value: "3", label: "Channels" }],
     shots: [
-      { caption: "YouTube / Demand Gen results" },
-      { caption: "Meta campaign results" },
+      { src: "/work/rcane-youtube.png", caption: "YouTube · brand film video views" },
+      { src: "/work/rcane-google-ads.png", caption: "Google Ads · Demand Gen campaigns" },
+      { src: "/work/rcane-meta.png", caption: "Meta Ads Manager · ad sets" },
     ],
     featured: false,
   },
@@ -286,9 +286,9 @@ export const CAMPAIGNS: Campaign[] = [
     ],
     recognition: "Awarded the Badge of Honor at Trasccon for high-impact results.",
     shots: [
-      { caption: "Search Console · performance" },
-      { caption: "Google Analytics · organic users" },
-      { caption: "Keyword rankings" },
+      { src: "/work/trasccon-search-console.png", caption: "Search Console · performance" },
+      { src: "/work/trasccon-analytics.png", caption: "Google Analytics · users" },
+      { src: "/work/trasccon-ranking.png", caption: "Google Search · page 1 ranking" },
     ],
     featured: true,
   },
@@ -316,8 +316,8 @@ export const CAMPAIGNS: Campaign[] = [
       { value: "400+", label: "Adlystio organic Instagram followers" },
     ],
     shots: [
-      { caption: "LinkedIn · follower growth" },
-      { caption: "Instagram · Adlystio profile" },
+      { src: "/work/social-linkedin.png", caption: "LinkedIn · Trasccon page analytics" },
+      { src: "/work/social-instagram.png", caption: "Instagram · Adlystio profile" },
     ],
     featured: false,
   },
@@ -341,22 +341,22 @@ export const RESULTS = [
   { value: "5,079", title: "Messaging conversations for Aaramgram, a Wayanad resort.", text: "Meta campaigns tuned for cost-efficient guest enquiries at ₹13.56 per conversation." },
   { value: "₹6.63", title: "Per conversation for Go2Wayanad.", text: "1,985 booking enquiries for a Wayanad resort booking agency." },
   { value: "35+", title: "Page 1 rankings at Trasccon.", text: "Structured keyword mapping, 40+ SEO landing pages and internal linking brought in 7,000+ new organic users, 50.1K impressions and 2.8K clicks over six months." },
-  { value: "352", title: "Leads in 20 days for Kuruva Island Resort.", text: "Local targeting and lead-form optimisation on Meta at ₹22 per result." },
+  { value: "1,104", title: "Messaging conversations for Koza Aesthetic Clinic.", text: "Service-specific Meta campaigns for Carbon Facial, Hydra Facial and other treatments at ₹50.54 per conversation, reaching 1.3 million+ impressions." },
   { value: "400→1.1K", title: "LinkedIn followers for Trasccon in six months.", text: "Industry content, professional positioning and an engagement routine." },
   { value: "Badge", title: "Badge of Honor at Trasccon", text: "for high-impact results while running digital marketing independently." },
 ];
 
 /** Dashboard screenshot slots shown under the results ledger. Set `src` once you have the image. */
 export const DASHBOARDS: Shot[] = [
-  { caption: "Meta Ads Manager · account overview" },
-  { caption: "Google Ads · ROAS report" },
-  { caption: "Search Console · Trasccon performance" },
+  { src: "/work/design1studio-meta-campaigns.png", caption: "Meta Ads Manager · Design1Studio lead campaigns" },
+  { src: "/work/design1studio-google-ads.png", caption: "Google Ads · Design1Studio overview" },
+  { src: "/work/trasccon-search-console.png", caption: "Search Console · Trasccon performance" },
 ];
 
 /** Portfolio page: headline strip. */
 export const PORTFOLIO_STRIP = [
-  { value: "8,567", label: "Meta conversations across Aaramgram, Go2Wayanad and Aesthetic Design" },
-  { value: "640", label: "Leads from Kuruva Island Resort and Lead Workz" },
+  { value: "9,671", label: "Meta conversations across Aaramgram, Go2Wayanad, Aesthetic Design and Koza" },
+  { value: "1.3M+", label: "Impressions for Koza Aesthetic Clinic on Meta" },
   { value: "6.8x", label: "Return on ad spend for Design1Studio" },
   { value: "35+", label: "Keywords on Google page 1 for Trasccon" },
 ];
@@ -367,7 +367,7 @@ export const RESULTS_TABLE = [
   { client: "Aaramgram", industry: "Resort", channel: "Meta", result: "5,079 conversations", cost: "₹13.56 each" },
   { client: "Go2Wayanad", industry: "Booking agency", channel: "Meta", result: "1,985 conversations", cost: "₹6.63 each" },
   { client: "Aesthetic Design", industry: "Wall decor", channel: "Meta", result: "1,503 conversations", cost: "₹15.99 each" },
-  { client: "Kuruva Island Resort", industry: "Resort", channel: "Meta", result: "352 leads, 20 days", cost: "₹22 each" },
+  { client: "Koza – Aesthetic Clinic", industry: "Aesthetic clinic", channel: "Meta", result: "1,104 conversations", cost: "₹50.54 each" },
   { client: "Lead Workz", industry: "Digital agency", channel: "Meta", result: "288 leads", cost: "₹82.18 each" },
   { client: "Trasccon", industry: "Industrial B2B", channel: "SEO", result: "35+ page 1 keywords", cost: "n/a" },
 ];
@@ -382,8 +382,8 @@ export const CAMPAIGN_STEPS = [
 
 /** Portfolio page: websites built to convert. Set `shot.src` to add a screenshot. */
 export const WEBSITES = [
-  { name: "Trasccon.com", sector: "Industrial manufacturing", text: "40+ SEO landing pages and strategic keyword mapping on an SEO-first architecture, aimed at B2B lead generation.", tags: ["WordPress", "SEO-first"], shot: { caption: "Trasccon.com · homepage" } as Shot },
-  { name: "NavodayaPower.com", sector: "Industrial B2B", text: "Advanced product filtering and a clean interface built for an industrial audience.", tags: ["Custom development", "Performance"], shot: { caption: "NavodayaPower.com · product filter" } as Shot },
-  { name: "RainCountryResorts.com", sector: "Hospitality", text: "Visual storytelling and a conversion-driven layout that reflects the resort experience.", tags: ["Visual design", "SEO"], shot: { caption: "RainCountryResorts.com · homepage" } as Shot },
-  { name: "Leadworkz.com", sector: "Digital marketing agency", text: "Fast pages with scroll-based interactions on a modern design system.", tags: ["Next.js", "GSAP"], shot: { caption: "Leadworkz.com · homepage" } as Shot },
+  { name: "Trasccon.com", sector: "Industrial manufacturing", text: "40+ SEO landing pages and strategic keyword mapping on an SEO-first architecture, aimed at B2B lead generation.", tags: ["WordPress", "SEO-first"], shot: { src: "/work/site-trasccon.png", caption: "Trasccon.com · homepage" } as Shot },
+  { name: "NavodayaPower.com", sector: "Industrial B2B", text: "Advanced product filtering and a clean interface built for an industrial audience.", tags: ["Custom development", "Performance"], shot: { src: "/work/site-navodaya.png", caption: "NavodayaPower.com · homepage" } as Shot },
+  { name: "SDS", sector: "Security services · Sreesecure Design Solutions Pvt. Ltd.", text: "Corporate website for a security service company, with product and service pages, a blog and careers, employee and customer login portals, and a get-a-quote path for enquiries.", tags: ["Corporate site", "Lead capture"], shot: { src: "/work/site-sds.png", caption: "SDS · homepage" } as Shot },
+  { name: "Leadworkz.com", sector: "Digital marketing agency", text: "Fast pages with scroll-based interactions on a modern design system.", tags: ["Next.js", "GSAP"], shot: { src: "/work/site-leadworkz.png", caption: "Leadworkz.com · homepage" } as Shot },
 ];

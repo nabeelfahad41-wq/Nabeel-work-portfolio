@@ -19,7 +19,7 @@ export default function ShotFrame({
         <i /><i /><i />
         <span className="browser-url">{bar}</span>
       </div>
-      <div className="browser-view static">
+      <div className={`browser-view static${shot.src ? " has-shot" : ""}`}>
         {shot.src ? (
           <Image src={shot.src} alt={shot.caption} fill sizes={sizes} priority={priority} />
         ) : (
